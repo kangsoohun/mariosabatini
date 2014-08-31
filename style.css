@@ -1,0 +1,27 @@
+* {
+	font-family: 'Noto Sans', sans-serif;
+}
+body {
+scrollbar-face-color:#BC9B6A;
+scrollbar-highlight-color:#000000;
+scrollbar-3dlight-color:#000000;
+scrollbar-shadow-color:#000000;
+scrollbar-darkshadow-color:#000000;
+scrollbar-track-color:#000000;
+scrollbar-arrow-color:#000000;
+}
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+.main-block {  
+    background:rgb(0,0,0);  
+    background: transparent\9;
+    background:rgba(0,0,0,0.0);  
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);  
+    zoom: 1;  
+	position:absolute; top: 50%; width: 100%; margin-top: -41px;
+	padding-top: 20px; padding-bottom: 10px;
+}    
+.main-block:nth-child(n) {  
+    filter: none;  
+}

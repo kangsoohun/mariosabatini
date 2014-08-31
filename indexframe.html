@@ -1,19 +1,56 @@
 <html>
 <head>
-<title>MARIO SABATINI : ¸¶¸®¿À »ç¹ÙÆ¼´Ï</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<title>MARIO SABATINI : ë§ˆë¦¬ì˜¤ ì‚¬ë°”í‹°ë‹ˆ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link href='style.css' rel='stylesheet' type='text/css'>
 </head>
 
-<body bgcolor="#000000" leftmargin="0" topmargin="50" marginwidth="0" marginheight="0">
-<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+<body bgcolor="#000000" leftmargin="0" topmargin="50" marginwidth="0" marginheight="0" style="overflow-y:hidden;">
+<img src="140901/1.jpg" id="bg" alt="" style="cursor: pointer;" onclick="location.href='mariosabatini.htm'">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%" style="cursor: pointer;" onclick="location.href='mariosabatini.htm'">
   <tr>
     <td>
       <div align="center"> 
-        <p><a href="mariosabatini.htm" onfocus="blur()"><img src="images/index.jpg" width="1121" height="709" border="0"></a></p>
-        <p><img src="http://count.whoisweb.net/count.php?db=db33514"> </p>
+        <div class="main-block">
+        	<div style="width: 354px; border: 1px solid #fff; cursor: pointer; transition-duration: 0.5s;" onclick="location.href='#'" onmouseover="this.style.background='#fff'; document.getElementById('main-button').style.color='#000'" onmouseout="this.style.background='transparent'; document.getElementById('main-button').style.color='#fff'">
+        		<a id="main-button" href="mariosabatini.htm" style="font-size: 1.1em; text-decoration: none; color: #fff; line-height:40px; transition-duration: 0.1s;">
+        			MARIO SABATINI Theme Travel for Sep.<br />
+    			</a>
+        	</div>
+    		<div style="padding: 10px; padding-bottom:8px;"><font style="font-size: 0.8em; color:#fff;">the day of departure : September 1, 2014</font></div>
+        </div>
+        <!--<p><a href="mariosabatini.htm" onfocus="blur()"><img src="images/index.jpg" width="1121" height="709" border="0"></a></p>
+        <p><img src="http://count.whoisweb.net/count.php?db=db33514"> </p>-->
       </div>
     </td>
   </tr>
 </table>
+<script>
+$(window).load(function() {    
+
+	var theWindow        = $(window),
+	    $bg              = $("#bg"),
+	    aspectRatio      = $bg.width() / $bg.height();
+	    			    		
+	function resizeBg() {
+		
+		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+		    $bg
+		    	.removeClass()
+		    	.addClass('bgheight');
+		} else {
+		    $bg
+		    	.removeClass()
+		    	.addClass('bgwidth');
+		}
+					
+	}
+	                   			
+	theWindow.resize(resizeBg).trigger("resize");
+
+});
+</script>
 </body>
 </html>
