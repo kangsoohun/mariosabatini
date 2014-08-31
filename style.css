@@ -1,7 +1,11 @@
-* {
+.mariosabatini {
+	font-family: 'Kalam', cursive;
+}
+.noto-sans {
 	font-family: 'Noto Sans', sans-serif;
 }
 body {
+font-family: 'Noto Sans', sans-serif;
 scrollbar-face-color:#BC9B6A;
 scrollbar-highlight-color:#000000;
 scrollbar-3dlight-color:#000000;
